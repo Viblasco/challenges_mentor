@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0%;
+    padding: 0;
+}
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+}
+
+h2 {
+    font-family: "Big Shoulders Display", cursive;
+    text-transform: uppercase;
+}
+
+.texto {
+    font-size: 14px;
+    margin-bottom: 4rem;
+}
+
+.principal {
+    display: flex;
+    max-width: 768px;
+    min-width: 320px;
+}
+
+.columna .activa {
+    width: 60%;
+}
+
+.columna {
+    padding: 2rem;
+    color: white;
+    width: 25%;
+    overflow: hidden;
+    transition: width .3s ease-in-out;
+    cursor: pointer;
+}
+
+.columna:first-of-type {
+    border-radius: 1rem 0 0 1rem;
+}
+
+.columna:last-of-type {
+    border-radius: 0 1rem 1rem 0;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.enlace {
+    background-color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    border-radius: 1rem;
+}
+
+.sedans .enlace {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs .enlace {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury .enlace {
+    color: hsl(179, 100%, 13%);
+}
